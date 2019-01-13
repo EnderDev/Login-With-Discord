@@ -1,9 +1,5 @@
-# Login with Discord
-Repo has been archived by owner, and all assets are preserved here.
-
-# Old
-
 # Login With Discord
+## Archived and preserved
 ### Simple Promise-based Discord login API
 
 * [Live Example](https://lwd.js.org/)<br>
