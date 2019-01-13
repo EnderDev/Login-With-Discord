@@ -2,11 +2,11 @@
 ## Archived and preserved
 ### Simple Promise-based Discord login API
 
-* [Live Example](https://lwd.js.org/)<br>
-* [Download](https://github.com/DusterTheFirst/Login-With-Discord/releases)
+* [Live Example](https://bot.ender.site/lwd)<br>
+* [Download](https://github.com/EnderDev/Login-With-Discord/releases)
 
 # Installation
-Either download the latest version from the [GitHub releases](https://github.com/DusterTheFirst/Login-With-Discord/releases)
+Either download the latest version from the [GitHub releases](https://github.com/EnderDev/Login-With-Discord/releases)
 or to ensure your site always has the latest version, include it using [jsdelivr](https://jsdelivr.net) with the below url
 ```
 https://cdn.jsdelivr.net/gh/dusterthefirst/Login-With-Discord/dist/lwd.js
