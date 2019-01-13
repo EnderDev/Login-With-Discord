@@ -1,3 +1,4 @@
 # Login-With-Discord
-Project abandoned by owner, will archive all assets here.
+Original code by @DusterTheFirst
+Forked and preserved for future reference.
 
