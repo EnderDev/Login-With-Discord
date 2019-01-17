@@ -2,6 +2,8 @@
 ## Archived and preserved
 ### Simple Promise-based Discord login API
 
+I might revive this one day -Ender
+
 * [Live Example](https://bot.ender.site/lwd)<br>
 * [Download](https://github.com/EnderDev/Login-With-Discord/releases)
 
