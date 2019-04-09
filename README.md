@@ -70,7 +70,8 @@ Once you have the discord object you have access to many functions and event han
                $("#guilds").append(`<p id="g-${g.id}"><img src="${icon}"><h1>${g.name}</h1></p>`)
            })
        }; 
-</script>```
+</script>
+```
 
 # Documentaion
 
