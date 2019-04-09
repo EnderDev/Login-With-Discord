@@ -30,6 +30,48 @@ You must pass it the `clientID` and [scopes](#Supported Scopes) and can optional
 
 Once you have the discord object you have access to many functions and event handlers
 
+# Example Code
+
+```js
+<script src="https://cdn.jsdelivr.net/gh/dusterthefirst/Login-With-Discord/dist/lwd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<button onclick="login()">login to discord</button>
+
+<script>
+       let discord = new LoginWithDiscord({
+           clientID: '565116533085306882',
+           scopes: [
+               Scope.Identify, Scope.Guilds
+           ]
+       });
+       
+       function logout() {
+           discord.logout();
+           console.log("Logged out");
+           location.reload();
+       }
+       
+       function login() {
+           discord.login();
+           console.log("Opened Authorization Pane");
+       }
+    
+       discord.onlogin = async () => {
+           console.clear()
+           let user = await discord.fetchUser();
+           let guilds = await discord.fetchGuilds();
+           document.write(`You are now logged in as ${user.username}#${user.discriminator}. <button onclick="logout()">logout</button><br><div id="guilds"></div>`)
+           console.log(user)
+           guilds.forEach(g => {
+               var icon = g.iconURL
+               if(icon == null) {
+                   icon = "https://cdn.discordapp.com/embed/avatars/0.png"
+               }
+               $("#guilds").append(`<p id="g-${g.id}"><img src="${icon}"><h1>${g.name}</h1></p>`)
+           })
+       }; 
+</script>```
+
 # Documentaion
 
 ## `discord.onlogin`
